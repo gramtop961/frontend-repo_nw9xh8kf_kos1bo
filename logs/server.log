@@ -3,9 +3,9 @@
 > vite
 
 
-  VITE v5.4.20  ready in 254 ms
+  VITE v5.4.20  ready in 236 ms
 
   ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.20.17.157:3000/
-10:40:59 AM [vite] Pre-transform error: Transform failed with 1 error:
-/home/workspace/src/App.jsx:15:59: ERROR: Expected "{" but found "\\"
+  ➜  Network: http://172.20.6.11:3000/
+11:50:43 AM [vite] ✨ new dependencies optimized: lucide-react
+11:50:43 AM [vite] ✨ optimized dependencies changed. reloading

@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Calendar, Clock, Coins, Users } from "lucide-react";
 
 function ProgressBar({ current, total }) {
@@ -64,7 +65,7 @@ export default function TournamentCard({
 }
 
 function Countdown({ startsInMinutes = 10 }) {
-  const target = Date.now() + startsInMinutes * 60 * 1000;
+  const targetRef = useRef(Date.now() + startsInMinutes * 60 * 1000);
   const [, force] = useState(0);
 
   useEffect(() => {
@@ -72,7 +73,7 @@ function Countdown({ startsInMinutes = 10 }) {
     return () => clearInterval(id);
   }, []);
 
-  const remaining = Math.max(0, target - Date.now());
+  const remaining = Math.max(0, targetRef.current - Date.now());
   const s = Math.floor((remaining / 1000) % 60)
     .toString()
     .padStart(2, "0");
@@ -91,5 +92,3 @@ function Countdown({ startsInMinutes = 10 }) {
     </div>
   );
 }
-
-import { useEffect, useState } from "react";

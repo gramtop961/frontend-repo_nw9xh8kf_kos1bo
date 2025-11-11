@@ -12,13 +12,13 @@ export default function App() {
         <Sections />
 
         <section className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <Card title="My Matches" icon={<Rocket className=\"h-5 w-5 text-violet-600\" />}> 
+          <Card title="My Matches" icon={<Rocket className="h-5 w-5 text-violet-600" />}> 
             Track joined matches, timers and room info.
           </Card>
-          <Card title="Results" icon={<User className=\"h-5 w-5 text-emerald-600\" />}> 
+          <Card title="Results" icon={<User className="h-5 w-5 text-emerald-600" />}> 
             Leaderboards, proofs and winners.
           </Card>
-          <Card title="Profile" icon={<Settings className=\"h-5 w-5 text-amber-600\" />}> 
+          <Card title="Profile" icon={<Settings className="h-5 w-5 text-amber-600" />}> 
             Wallet, deposits and settings.
           </Card>
         </section>
